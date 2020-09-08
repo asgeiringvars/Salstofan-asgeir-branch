@@ -1,0 +1,361 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: white;
+}
+
+/*HeaderBlock class with default position around banner to create normal flow for content*/
+.headerBlock {
+    width: 100%;
+    height: 312px;
+}
+
+.banner {
+    position: absolute;
+    width: 100%;
+    height: 312px;
+    background-image: url("images/psychologist.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.desktopMenu {
+    display: none;
+    font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 140%;
+
+
+}
+
+.topBar {
+    width: 100%;
+    height: 64px;
+    background-color: rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+}
+
+.logoImg {
+    display: block;
+    float: left;
+}
+
+.topBar a.icon {
+    float: right;
+    padding: 20px 10px;
+}
+
+.mobileMenu {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.mobileMenu a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    padding: 12px 12px;
+}
+
+.hideMobile {
+    display: none;
+}
+
+.appointmentButton {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -128px;
+    bottom: 4%;
+    background-color: #7c9f83; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.content {
+    width: 100%;
+}
+
+.siteSubTitle {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 48px;
+    color: #215C4C;
+}
+
+.flexboxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+
+.flexboxItem {
+    width: 100%;
+}
+
+.flexboxItem img {
+    display: block;
+    height: 40%;
+    width: 100%;
+    margin: 0 auto;
+    padding: 12px 0;
+}
+
+.flexboxItem h2 {
+    text-align: center;
+    padding: 12px 0;
+    font-size: 28px;
+    color: #215C4C;
+}
+
+.flexboxItem p {
+    padding: 12px 16px;
+    line-height: 1.4;
+}
+
+.aboutUs {
+    width: 100%;
+}
+
+
+.aboutUs__info img{
+    height: 40vh;
+    width: 100%;
+    object-fit: cover;
+}
+
+.aboutUs__info p {
+    padding: 12px 16px;
+    line-height: 1.4;
+}
+
+.staffPic {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+.footer {
+    width: 100%;
+    background-color: #318CE7;
+}
+
+.footer h2 {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer p {
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-bottom: 10px;
+}
+
+/*Styles for bigger screens*/
+@media only screen and (min-width: 1000px) {
+    /***************/
+    /*Header begins*/
+    /***************/
+    .headerBlock {
+        height: 100vh;
+    }
+
+    .banner {
+        height: 100%;
+        width: 100%;
+    }
+
+    .topBar {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .logoImg {
+        display: block;
+        float: left;
+        padding: 8px 16px;
+    }
+
+    .topBar a.icon {
+        display: none;
+    }
+
+    #myLinks {
+        display: none;
+    }
+
+    .desktopMenu {
+        display: block;
+        float: right;
+        height: 100%;
+    }
+
+    .desktopMenu ul {
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .desktopMenu ul li {
+        float: left;
+        height: 100%;
+    }
+
+    .desktopMenu ul li a {
+        display: block;
+        height: 100%;
+        color: #215C4C;
+        padding: 18px 4vw;
+        text-decoration: none;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .desktopMenu ul li a:hover {
+        background-color: rgba(255, 255, 255, 0.95);
+    }
+    /*Header ends*/
+
+    /****************/
+    /*Content begins*/
+    /****************/
+    .siteSubTitle {
+        padding: 24px 0;
+        text-align: center;
+        font-family: Libre Baskerville;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 64px;
+        line-height: 79px;
+        letter-spacing: -0.02em;
+    }
+    
+    .flexboxContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    
+    .flexboxItem {
+        width: 100%;
+        margin: 0 32px;
+    }
+    
+    .flexboxItem img {
+        display: block;
+        height: 40%;
+        width: 100%;
+        margin: 0 auto;
+        padding: 12px 0;
+    }
+    
+    .flexboxItem h2 {
+        text-align: center;
+        padding: 12px 0;
+        font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+line-height: 49px;
+letter-spacing: -0.02em;
+text-transform: capitalize;
+    }
+    
+    .flexboxItem p {
+        padding: 12px 16px;
+        line-height: 1.4;
+    }
+
+    .aboutUs {
+        width: 100%;
+        height: 60vh;
+        background-image: url("images/bigGroup.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .aboutUs__info {
+        width: 35%;
+        height: 100%;
+    }
+    
+    .aboutUs__info .aboutImg{
+        display: none;
+    }
+
+    .footer {
+        width: 100%;
+        height: 208px;
+        background-color: #7c9f83;
+    }
+
+    .footerContainer {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: stretch;
+        overflow: hidden;
+    }
+
+    .footerTop {
+        text-align: center;
+        color: #fff;
+        margin-top: 64px;
+        margin-bottom:15px;
+        margin-left: 35px;
+        margin-right: 35px;
+        border-bottom:2px solid #fff;
+        padding-bottom:15px;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+        
+    }
+
+    .footerBottom {
+        float: left;
+        color:#fff;
+        padding:15px 0px 45px 30px;
+        width: 100%;
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: -0.02em;
+    }
+    .footerRow {
+        height: 100%;
+        width: 100%;
+        margin: 10px 32px;
+        background-color: #7c9f83;
+    }
+
+    .footerSocial {
+        float: right;
+        padding-left: 50px;
+        margin-right: 50px;
+        
+    }
+    
+}
